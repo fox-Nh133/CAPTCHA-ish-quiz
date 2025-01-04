@@ -61,7 +61,7 @@ function getSelectedImages() {
 function sendAnswer(filenames) {
     const filenamesArray = Array.from(filenames);
 
-    fetch('ENDPOINT-URL', {
+    fetch('ENDPOINT-URL/validateAnswer', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'

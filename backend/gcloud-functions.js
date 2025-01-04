@@ -24,6 +24,8 @@ functions.http('validateAnswer', (req, res) => {
                 break;
             }
         }   
+    } else {
+        isValid = false
     }
 
     if (isValid) {

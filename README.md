@@ -4,11 +4,16 @@
 ![CAPTCHA-ish_Quiz_screenshot](https://github.com/user-attachments/assets/9a3c33ea-e852-4e9d-952a-eb3e364f8213)
 
 ## 使い方
-**問題文の設定**
+### 問題文の設定
+
 `./index.html`の`captcha-instruction`クラスのテキストで問題文を設定する。
-**画像の登録**
+
+### 画像の登録
+
 `./assets/img`ディレクトリ配下に問題となる`image1.jpg`から`image9.jpg`を格納する。
-**バックエンドのデプロイ**
+
+### バックエンドのデプロイ
+
 正解の判定はバックエンド関数で実装
 
 `./backend/gcloud-functions.js`内の`predefineSet`で正解を定義する。

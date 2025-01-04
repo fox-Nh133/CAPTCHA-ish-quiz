@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAPTCHA風クイズ</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>CAPTCHA風クイズ</h1>
+        </header>
+        <main>
+            <div class="captcha-container">
+                <p class="captcha-instruction"><span class="highlight">100Ω以下の抵抗器</span><br>の画像を全て選択してください。</p>
+                <div class="captcha-grid">
+                    <div class="captcha-item"><img src="./assets/img/image1.jpg" alt="image1"></div>
+                    <div class="captcha-item"><img src="./assets/img/image2.jpg" alt="image2"></div>
+                    <div class="captcha-item"><img src="./assets/img/image3.jpg" alt="image3"></div>
+                    <div class="captcha-item"><img src="./assets/img/image4.jpg" alt="image4"></div>
+                    <div class="captcha-item"><img src="./assets/img/image5.jpg" alt="image5"></div>
+                    <div class="captcha-item"><img src="./assets/img/image6.jpg" alt="image6"></div>
+                    <div class="captcha-item"><img src="./assets/img/image7.jpg" alt="image7"></div>
+                    <div class="captcha-item"><img src="./assets/img/image8.jpg" alt="image8"></div>
+                    <div class="captcha-item"><img src="./assets/img/image9.jpg" alt="image9"></div>
+                </div>
+                <hr class="captcha-divider">
+                <div class="captcha-footer">
+                    <div class="captcha-icons">
+                        <span class="material-symbols-outlined" onclick="handleClick('refresh')">refresh</span>
+                        <span class="material-symbols-outlined" onclick="handleClick('headphones')">headphones</span>
+                        <span class="material-symbols-outlined" onclick="handleClick('info')">info</span>
+                    </div>
+                    <button class="captcha-button" onclick="handleClick('answer')">確認</button>
+                </div>
+            </div>
+            <div class="answer-container correct">
+                <p class="answer-correct-title">正解です！</p>
+            </div>
+            <div class="answer-container incorrect">
+                <p class="answer-incorrect-title">不正解です！<br>残念。。。</p>
+            </div>
+        </main>
+    <script defer type="text/javascript" src="script.js"></script>
+    </body>
+</html>
